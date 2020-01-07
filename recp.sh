@@ -1,5 +1,6 @@
 #!/bin/sh
-if [ $# -eq 0 ];then
+
+if [ $# -eq 0 ]; then
     echo "false"
     exit 0
 fi
@@ -10,7 +11,7 @@ case $os in
 Linux)
     cp="xclip -sel clip"
     ;;
-Darwim)
+Darwin)
     cp="pbcopy"
     ;;
 *)
